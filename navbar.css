@@ -1,10 +1,14 @@
+  body{
+    background-color: #F0F6D5;
+  }
+  
   .main{
     padding: 0% 0% 0% 5%;
   }
   
   .navbar {
     overflow: hidden;
-    background-color: #171717;
+    background-color: #92BCEA;
     font-family: "Georgia";
     
   }
@@ -16,15 +20,17 @@
   .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #171717;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
 
     border: none;
-    border-right: solid rgb(195, 192, 200) 1px;
-    border-bottom: solid rgb(195, 192, 200) 1px; /*!@#$%^&*()___________________)(*&^%$#@!*/
-    border-radius: 25px;
+    border-right: solid #171717 1px;
+  }
+
+  .navbar .homebtn{
+    border-left: solid #171717 1px;
   }
   
   .dropdown {
@@ -34,13 +40,11 @@
   
   .dropdown .dropbtn {
     border: none;
-    border-right: solid rgb(195, 192, 200) 1px;
-    border-bottom: solid rgb(195, 192, 200) 1px; /*!@#$%^&*()___________________)(*&^%$#@!*/
-    border-radius: 25px;
+    border-right: solid #171717 1px;
 
     font-size: 16px;  
     outline: none;
-    color: white;
+    color: #171717;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -48,18 +52,15 @@
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(65, 36, 116);
+    background-color: #F45866;
   }
   
   .dropdown-content {
     border: none;
-    border-bottom: solid rgb(195, 192, 200) 1px; /*!@#$%^&*()___________________)(*&^%$#@!*/
-    border-radius: 0px;
-    border-bottom-left-radius: 25px;
 
     display: none;
     position: absolute;
-    background-color: #171717;
+    background-color: #92BCEA;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -67,13 +68,11 @@
   
   .dropdown-content a {
     border: none;
-    border-bottom: solid rgb(195, 192, 200) 1px; /*!@#$%^&*()___________________)(*&^%$#@!*/
-    border-radius: 0px;
-    border-bottom-left-radius: 25px;
+    border-bottom: solid #171717 1px;
 
 
     float: none;
-    color: white;
+    color: #171717;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -81,7 +80,7 @@
   }
   
   .dropdown-content a:hover {
-    background-color: rgb(92, 51, 162);
+    background-color: #FF6B6B
   }
   
   .dropdown:hover .dropdown-content {
@@ -100,15 +99,15 @@
   }
 
   .arrow-down{
-    border: solid white;
+    border: solid #171717;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
     
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-     transform: rotate(-135deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+     transform: rotate(-45deg);
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
@@ -126,7 +125,15 @@
   very light grey....................... rgb(195, 192, 200);
 
   pink ish red.......................... #bd1139;
-  idk man, red on the darker side......... #b60024;
+  idk man, red on the darker side....... #b60024;
+
+  colour palent::after
+
+  earie black (aka dark grey)........... #171717;
+  Light yellow.......................... #F0F6D5;
+  jordy blue............................ #92BCEA;
+  bright pink........................... #F45866;
+  light red............................. #FF6B6B;
 
 
   */

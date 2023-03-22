@@ -3,7 +3,7 @@ function navbar(){
     return (
         `<div class="navbar">
             <div class="navbarpad">
-                <a href="home.html">Home</a>
+                <a class="homebtn" href="home.html">Home</a>
                 <div class="dropdown">
                 <button class="dropbtn">Tutorials &nbsp<i class="arrow-down"></i> </button>
                 <div class="dropdown-content">
@@ -22,8 +22,8 @@ function navbar(){
     );
 }
 
-var head = document.getElementsByTagName('HEAD')[0];
-var link = document.createElement('link');
+const head = document.getElementsByTagName('HEAD')[0];
+const link = document.createElement('link');
  
 link.rel = 'stylesheet';
 link.type = 'text/css';
