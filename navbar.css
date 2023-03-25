@@ -7,14 +7,16 @@ body{
 }
 
 .main{
-  padding: 66px 0% 0% 5%;
+  padding: 66px 0% 0% 10%;
 }
  
 .navbar-wrapper{
-  position: absolute;
-  top: 10px;
+  position: sticky;
+  top: 0;
   right: 0;
   width: 100%;
+  padding-top: 10px;
+  background-color: rgb(16, 16, 16,0.95);
 }
 
 .navbar {
@@ -27,7 +29,7 @@ body{
   float: right;
 }
 
-.navbar a {  
+.navbar a {
   font-size: 20px;
   float: left;
   color: #ffffff;
@@ -47,12 +49,24 @@ body{
   font-size: 20px;
   float: left;
   color: #2a537f;
-  background-color: #101010;
+  background-color: rgb(0,0,0, 0);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 1px;
+  border: none;
+}
+
+.navbar-logo-spacing{
+  float: left;
   text-align: center;
   text-decoration: none;
   padding: 14px 584px 14px 0px;
-  font-weight: 800;
   border: none;
+}
+
+.navbar .navbar-logo:hover{
+  text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.2);
 }
 
 .dropdown {
@@ -83,9 +97,9 @@ body{
   border-radius: 20px;
   display: none;
   position: absolute;
-  background-color: rgb(5, 47, 95, 0.8);
+  background-color: rgb(5, 47, 95, 0.95);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(107, 107, 107, 0.2);
   z-index: 1;
 }
 
@@ -157,12 +171,12 @@ light red............................. #FF6B6B;
 
 I cannot figure out this colour palette if my life diepended it one it
 
+↓
 Berkeley Blue......................... #052F5F;
 Night................................. #101010;
 Light cyan............................ #D4F5F5;
-Jungle Green.......................... #419D78;
-Cordovan.............................. #419D78;
-
+Jungle Green.......................... #419D78; // note used yet
+Cordovan.............................. #419D78; // not used yet
 berkeley blue light version remix..... #2a537f;
 
 
