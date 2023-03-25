@@ -35,12 +35,16 @@ function navbar(){
     );
 }
 
-const head = document.getElementsByTagName('HEAD')[0];
-const link = document.createElement('link');
+function createLink(href){
+
+    const link = document.createElement('link');
+
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = href;
+
+    return link;
+}
  
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = 'navbar.css';
- 
-head.appendChild(link);
+document.getElementsByTagName('HEAD')[0].appendChild(createLink("navbar.css"));
 document.write(navbar());
