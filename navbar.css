@@ -1,139 +1,169 @@
-  body{
-    background-color: #F0F6D5;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body{
+  background-color: #101010;
+  opacity: 0.8;
+  color: white;
+}
+
+.main{
+  padding: 66px 0% 0% 5%;
+}
+
+.navbar-wrapper{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  font-family: 'Karla', sans-serif;
+}
+
+.navbarpad{
+  padding: 0% 8% 0% 0%;
+  float: right;
+}
+
+.navbar a {  
+  font-size: 20px;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 40px;
+}
+
+.navbar .navbar-spacing{
+  float: left;
+  padding: 0px 20px;
+}
+
+.navbar .navbar-logo{
+  font-size: 20px;
+  float: left;
+  color: #2a537f;
+  background-color: #101010;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 584px 14px 0px;
+  font-weight: 800;
+  border: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  transition-duration: 0.7s;
+  background-color: #2a537f;
+  color: white;
+}
+
+.dropdown-content {
+  border: none;
+  border-radius: 20px;
+  display: none;
+  position: absolute;
+  background-color: rgb(5, 47, 95, 0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content-spacing {
+  padding-top: 15px;
+}
+
+.dropdown-content a {
+  border: none;
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .arrow-down {
+  -webkit-transform: rotate(405deg);
+  -moz-transform: rotate(405deg);
+  -o-transform: rotate(405deg);
+    transform: rotate(405deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.arrow-down{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
   
-  .main{
-    padding: 0% 0% 0% 5%;
-  }
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #92BCEA;
-    font-family: "Georgia";
-    
-  }
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
 
-  .navbarpad{
-    padding: 0% 0% 0% 5%;
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: #171717;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
+/*
+Colors:
 
-    border: none;
-    border-right: solid #171717 1px;
-  }
+twilight purple or smth............... rgb(92, 51, 162);
+a lil darker purple................... rgb(65, 36, 116);
 
-  .navbar .homebtn{
-    border-left: solid #171717 1px;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    border: none;
-    border-right: solid #171717 1px;
+dark grey............................. #171717;
+a lil lighter grey.................... #252525;
+very light grey....................... rgb(195, 192, 200);
 
-    font-size: 16px;  
-    outline: none;
-    color: #171717;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #F45866;
-  }
-  
-  .dropdown-content {
-    border: none;
+pink ish red.......................... #bd1139;
+idk man, red on the darker side....... #b60024;
 
-    display: none;
-    position: absolute;
-    background-color: #92BCEA;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    border: none;
-    border-bottom: solid #171717 1px;
+colour palette 1:
+
+earie black (aka dark grey)........... #171717; 
+Light yellow.......................... #F0F6D5;
+jordy blue............................ #92BCEA;
+bright pink........................... #F45866;
+light red............................. #FF6B6B;
+
+I cannot figure out this colour palette if my life diepended it one it
+
+Berkeley Blue......................... #052F5F;
+Night................................. #101010;
+Light cyan............................ #D4F5F5;
+Jungle Green.......................... #419D78;
+Cordovan.............................. #419D78;
+
+berkeley blue light version remix..... #2a537f;
 
 
-    float: none;
-    color: #171717;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #FF6B6B
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown:hover .arrow-down {
-    -webkit-transform: rotate(405deg);
-    -moz-transform: rotate(405deg);
-    -o-transform: rotate(405deg);
-     transform: rotate(405deg);
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-     transition-duration: 1s;
-  }
-
-  .arrow-down{
-    border: solid #171717;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-     transform: rotate(-45deg);
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-     transition-duration: 1s;
-  }
-
-  /*
-  Colors:
-
-  twilight purple or smth............... rgb(92, 51, 162);
-  a lil darker purple................... rgb(65, 36, 116);
-
-  dark grey............................. #171717;
-  a lil lighter grey.................... #252525;
-  very light grey....................... rgb(195, 192, 200);
-
-  pink ish red.......................... #bd1139;
-  idk man, red on the darker side....... #b60024;
-
-  colour palent::after
-
-  earie black (aka dark grey)........... #171717; 
-  Light yellow.......................... #F0F6D5;
-  jordy blue............................ #92BCEA;
-  bright pink........................... #F45866;
-  light red............................. #FF6B6B;
-
-
-  */
+*/
