@@ -88,8 +88,7 @@ body{
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   transition-duration: 0.7s;
-  background-color: #2a537f;
-  color: white;
+  background-color: #2a537fe3;
 }
 
 .dropdown-content {
