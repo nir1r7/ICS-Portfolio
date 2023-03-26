@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body{
-  background-color: #101010;
+  background-color: rgb(4, 16, 29);
   opacity: 0.8;
   color: white;
 }
@@ -16,7 +16,7 @@ body{
   right: 0;
   width: 100%;
   padding-top: 10px;
-  background-color: rgb(16, 16, 16,0.95);
+  background-color: rgba(4, 16, 29, 0.95);
 }
 
 .navbar {
@@ -176,6 +176,7 @@ Light cyan............................ #D4F5F5;
 Jungle Green.......................... #419D78; // note used yet
 Cordovan.............................. #419D78; // not used yet
 berkeley blue light version remix..... #2a537f;
+Night more like burkley blue bg....... rgb(4, 16, 29);
 
 
 */
