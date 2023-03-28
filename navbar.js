@@ -1,6 +1,6 @@
 
 function navbar(){
-    return ( 
+    return (
         `
         <div class="navbar-wrapper">
             <div class="navbar">
