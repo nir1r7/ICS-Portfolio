@@ -14,7 +14,6 @@ function navbar(){
                         <div class="dropdown">
                             <button class="dropbtn">Tutorials &nbsp<i class="arrow-down"></i> </button>
                             <div class="dropdown-content-spacing">
-                            
                                 <div class="dropdown-content">
                                     <a href="oop.html"> OOP </a>
                                     <a href="arrays.html"> Arrays </a>
