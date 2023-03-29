@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
+.no-transition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 body{
   background-color: rgb(4, 16, 29);
   opacity: 0.8;

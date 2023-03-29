@@ -1,4 +1,5 @@
 
+// creating the nav bar
 function navbar(){
     return (
         `
@@ -47,3 +48,20 @@ function createLink(href){
  
 document.getElementsByTagName('HEAD')[0].appendChild(createLink("navbar.css"));
 document.write(navbar());
+
+
+/* attempt at removing transition on page load
+document.getElementsByTagName("body")[0].setAttribute("id", "body");
+document.getElementsByTagName("body")[0].setAttribute("class", "no-transition");
+
+function transitionAfterPageLoad() {
+    document.getElementById("body").classList.remove("no-transition");
+}
+
+(function() {
+    transitionAfterPageLoad();
+})()
+
+$(function() {
+    $("#body").removeClass("no-transition");
+});*/
