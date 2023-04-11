@@ -9,14 +9,14 @@ function navbar(){
                     <div class="navbar-logo-spacing">
                         <button onClick="window.location.href='home.html'" class="navbar-logo">NIR1</button>
                     </div>
-                    <div class="navbar-spacing"><a class="homebtn" href="home.html">Home</a></div>
+                    <div class="navbar-spacing"><a class="homebtn" href="home.html"><i class="fa fa-home"></i> Home</a></div>
 
                     <div class="navbar-spacing">
                         <div class="dropdown">
                             <button class="dropbtn">Tutorials &nbsp<i class="arrow-down"></i> </button>
                             <div class="dropdown-content-spacing">
                                 <div class="dropdown-content">
-                                    <a href="oop.html"> OOP </a>
+                                    <a href="oop.html">OOP </a>
                                     <a href="arrays.html"> Arrays </a>
                                     <a href="arraylists.html"> Arraylists </a>
                                     <a href="searchingsorting.html"> Searching & Sorting </a>
@@ -26,8 +26,8 @@ function navbar(){
                         </div> 
                     </div>
 
-                    <div class="navbar-spacing"><a href="addtionallearning.html">Projects</a></div>
-                    <div class="navbar-spacing"><a href="bibliography.html">Bibliography</a></div>
+                    <div class="navbar-spacing"><a href="addtionallearning.html"><i class="fa fa-code"></i> Projects</a></div>
+                    <div class="navbar-spacing"><a href="bibliography.html"><i class="fa fa-file-text-o"></i> Bibliography</a></div>
                 </div>
             </div>
         </div>
@@ -47,21 +47,5 @@ function createLink(href){
 }
  
 document.getElementsByTagName('HEAD')[0].appendChild(createLink("navbar.css"));
+document.getElementsByTagName('HEAD')[0].appendChild(createLink("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"));
 document.write(navbar());
-
-
-/* attempt at removing transition on page load
-document.getElementsByTagName("body")[0].setAttribute("id", "body");
-document.getElementsByTagName("body")[0].setAttribute("class", "no-transition");
-
-function transitionAfterPageLoad() {
-    document.getElementById("body").classList.remove("no-transition");
-}
-
-(function() {
-    transitionAfterPageLoad();
-})()
-
-$(function() {
-    $("#body").removeClass("no-transition");
-});*/
