@@ -147,14 +147,6 @@ body{
     transition-duration: 0.8s;
 }
 
-.tooltip-txt{
-  visibility: hidden;
-}
-
-.tooltip:hover .tooltip-txt {
-  visibility: visible;
-}
-
 /*
 Colors:
 
