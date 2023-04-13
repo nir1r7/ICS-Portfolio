@@ -66,7 +66,7 @@ body{
 }
 
 .navbar .navbar-logo:hover{
-  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.1);
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.15);
 }
 
 .dropdown {
@@ -145,6 +145,14 @@ body{
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
+}
+
+.tooltip-txt{
+  visibility: hidden;
+}
+
+.tooltip:hover .tooltip-txt {
+  visibility: visible;
 }
 
 /*
