@@ -3,6 +3,7 @@
 .main{
     padding: 66px 7% 0% 7%;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     line-height: 30px;
     
 }
@@ -22,6 +23,11 @@ h2{
 .content{
     padding: 0px 7% 0% 7%;
     border-left: solid #1e5c9e 2px;
+}
+
+.img-wrapper{
+    font-size: 13px;
+    line-height: 25px;
 }
 
 .img{
