@@ -1,3 +1,2 @@
 # ICS-Portfolio
-
-ICS4OU Portfolio
+This is my ICS4UO portfolio

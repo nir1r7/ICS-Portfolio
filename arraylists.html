@@ -29,20 +29,41 @@
                 and decreases in size when elements are removed from it. It serves the same purpose as a regular array and allows you to access 
                 its elements by their index.
                 <br><br>
-                There are two main differences between ArrayLists and arrays:
-                <ol type="1">
-                    <li>
-                        ArrayLists can only contain elements that are objects. Primative reference data such as <i>int</i>, <i>char</i>,
-                        <i>boolean</i> and <i>double</i> cannot be placed in an ArrayList. To do so, one must implement 
-                        <t class="tooltip">
-                            <span class="tooltip-word">wrapper classes</span> <span class="tooltip-text">(A wrapper class is a class that allows a primative data types to be used as objects)</span>
-                        </t>
-                        such as <i>Integer</i>, <i>Character</i>, <i>Boolean</i> and <i>Double</i> box types.
-                    </li>
-                    <li></li>
-                </ol>
+                There are few main differences between ArrayLists and arrays:
                 <br><br>
-                <h2>ArrayLists vs Arrays</h2>
+                <table class="arr-arraylist">
+                    <tr>
+                        <th>Arrays</th>
+                        <th>ArrayLists</th>
+                    </tr>
+                    <tr>
+                        <td>An arrays length cannot be resized after having been created; Its length is final.</td>
+                        <td>ArrayLists will automatically resize as new elements are added or removed.</td>
+                    </tr>
+                    <tr>
+                        <td>Arrays do not require any import statements unless its elements require import statements.</td>
+                        <td>ArrayLists require java.util.ArrayList to be imported in order to be used.</td>
+                    </tr>
+                    <tr>
+                        <td>Arrays can be constructed to hold either primatives or object references.</td>
+                        <td>
+                            ArrayList instances can hold only object references, not primatives. 
+                            Primative reference data such as int, char, boolean and double are to be replaced with wrapper classes such as
+                            Integer, Character, Boolean and Double box types respectively.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Arrays can be declared for only one type of element. E.i, an array is declared to hold strings,
+                            you cannot store an integer in it.
+                        </td>
+                        <td>
+                            An ArrayList can hold a mixture collection of objects if desired to. E.i, an ArrayList can hold 
+                            an Integer, String, Boolean, and another Integer. This form of using ArrayLists is not recommended.
+                            However, it is a fully valid way of using the class.
+                        </td>
+                    </tr>
+                </table>
                 <br><br>
                 <h2>ArrayList Example</h2>
                 <br><br>
