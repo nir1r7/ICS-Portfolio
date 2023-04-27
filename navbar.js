@@ -7,7 +7,7 @@ function navbar(){
             <div class="navbar">
                 <div class="navbarpad">
                     <div class="navbar-logo-spacing">
-                        <button onClick="window.location.href='home.html'" class="navbar-logo">NIR1</button>
+                        <button onClick="window.location.href='index.html'" class="navbar-logo">NIR1</button>
                     </div>
                     <div class="navbar-spacing"><a class="homebtn" href="index.html"><i class="fa fa-home"></i> Home</a></div>
 
