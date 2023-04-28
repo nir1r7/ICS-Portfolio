@@ -24,10 +24,8 @@
                 </ul>
                 <br>
                 <h2>Introduction</h2>
-                Recursion is a very interesting yet tricky topic. It is a process where a method calls itself either directly or indirectly.
-                This recall ignites a loop where the method may call itself a large number of times. Using a recursive algorithm allows
-                certain problems in programing to be solved very easily if understood well enough.
-                <br><br>
+                Recursion is a technique in programming where a function calls itself.
+                This can be useful when solving problems that can be broken down into small, similar problems.
                 A recursive function has a few parts to it. To begin with, there is always a base case.
                 A base case is essentially the ending point of the loop that terminates the whole recursive process.
                 Without a base case, the method will repeatedly call itself and will end up crashing the program.
@@ -35,15 +33,46 @@
                 return statement that ends up calling itself again along with another operation depending on the problem.
                 <br><br>
                 The interesting thing about recursion is that any recursive function can be recreated using forms of iteration.
-                The only difference being the speed and effeciency of the program. The majority of the time, recursion is much faster
-                than iteration. This concept is very advantageous to know for competitive programmers as they are always striving 
-                for the most effecient piece of code. Moreover, writing a recursive function takes less time to code and is much clearer to read.
-                Programmers may decide to use recursion for the sole purpose of adding more clarity to their program.
+                Recursion and iteration are both ways to repeat a set of instructions in Java.
+                Throughout the rest of this tutorial, the differences between the two techniques will become clear.
+
                 <br><br>
                 <h2>Recursion vs Iteration</h2>
+                
+                Recursion and iteration are both ways to repeat a set of instructions in Java.
+                Recursion is when a function calls itself, while iteration is when a loop repeats a set of instructions.
+
                 <br><br>
+                <table class="arr-arraylist">
+                    <tr>
+                        <th>Recursion</th>
+                        <th>Iteration</th>
+                    </tr>
+                    <tr>
+                        <td>A recursive functions repeatedly calls itself until a base case stops the recursion.</td>
+                        <td>An iterative function is a loop that executes a block of code until a certain condition is met.</td>
+                    </tr>
+                    <tr>
+                        <td>Recursion is very easy to read and understand.</td>
+                        <td>Iteration can be very confusing and difficult to read.</td>
+                    </tr>
+                    <tr>
+                        <td>Recursion can be memory-intesnive and can lead to *stack overflow errors if the recursion depth is very high.</td>
+                        <td>Iterative code can more effecient than recursion because it does not involve creating new *stack frames.</td>
+                    </tr>
+                </table>
+                <div class="subtext">
+                    *stack frame: a data structure used by computer programs to keep track of the execution of a function or subroutine.
+                    <br>*stack overflow: an error that occurs when a program tries to use too much stack space within a function.
+                </div>
+                <br>
+
                 <h2>Recursion Example</h2>
+                <img class="img" src="./imgs/fibonacci.png">
+
                 <br><br>
+
+
                 <h2>Additional Takeaways</h2>
                 - !@#$%^*()<br>
                 - !@#$%^*()<br>

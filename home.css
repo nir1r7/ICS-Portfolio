@@ -16,7 +16,8 @@ h1{
 
 .content{
     padding: 0px 7% 0% 7%;
-    border-left: solid #1e5c9e 2px;
+    border-left: solid #1e5c9ed3 2px;
+    z-index: -5;
 }
 
 .wave {
@@ -37,3 +38,17 @@ h1{
     60% { transform: rotate( 0.0deg) }
     100% { transform: rotate( 0.0deg) }
 }
+
+.load-page{
+    height: 80vh;
+    /* background-image: linear-gradient(to bottom, rgb(24, 33, 43), #1e5c9ed3, rgb(24, 33, 43)); */
+}
+
+.page{
+    height: 88vh;
+    /* background-image: linear-gradient(to bottom, rgb(24, 33, 43), rgb(18, 54, 92, 0.827)); */
+}
+
+/*
+#1e5c9ed3
+*/
