@@ -49,6 +49,19 @@ h1{
     /* background-image: linear-gradient(to bottom, rgb(24, 33, 43), rgb(18, 54, 92, 0.827)); */
 }
 
+#container {
+    right: 15vw;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    float: right;
+}
+
+.pic{
+    border-radius: 50%;
+}
+
 /*
 #1e5c9ed3
 */

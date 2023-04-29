@@ -35,13 +35,10 @@
                 The interesting thing about recursion is that any recursive function can be recreated using forms of iteration.
                 Recursion and iteration are both ways to repeat a set of instructions in Java.
                 Throughout the rest of this tutorial, the differences between the two techniques will become clear.
-
                 <br><br>
                 <h2>Recursion vs Iteration</h2>
-                
                 Recursion and iteration are both ways to repeat a set of instructions in Java.
                 Recursion is when a function calls itself, while iteration is when a loop repeats a set of instructions.
-
                 <br><br>
                 <table class="arr-arraylist">
                     <tr>
@@ -68,15 +65,40 @@
                 <br>
 
                 <h2>Recursion Example</h2>
-                <img class="img" src="./imgs/fibonacci.png">
-
+                The following program has two methods where both of which return the `n`th fibonacci number.
+                The first method, fibonacciRecursive(n), uses recursion to solve the problem.
+                The second method, fibonacciIterative(n), uses iteration to solve the problem.
                 <br><br>
-
+                <img class="img" src="./imgs/fibonacci.png">
+                <br><br>
+                On one hand, we can see that the recusrive method has a lot less code, and is much easier to read.
+                On the other hand, the iterative method has many local variables which can make understanding the code difficult.
+                <br><br>
+                As we can see in the recursive technique, the first step that happens is running base case.
+                As explained before, the base case is a conditionnel statement that has the end goal of ending the recursive calls.
+                In this example, the base case checks if the `n` parameter is less than or equal to 1.
+                If thus is true, then simply return n.
+                <br><br>
+                The second step in the recursive technique is to add additional subprogram operations.
+                However, in this case, the problem is simple enough such that having more opertions is unnecessary.
+                As a result, we move onto step 3, which is adding the return statement.
+                It is important to note that the return statement should always call the method within itself.
+                In the example above, we can see that the return statement adds the sum of the return values of 
+                fibonacciRecursive(n - 1) and fibonacciRecursive(n - 2); calls itself twice in the return statement.
+                <br><br>
+                Without goin into to too much depth, the iterative version of a recursive algorithm always has some form of iteration.
+                In this exmaple, there is a `for loop` that loops through all the numbers from 2 all the way to n.
+                Methods that use iteration varry from problem to problem.
+                They do not have a set framework like recursive methods.
+                This is one of the reasons why they can be hard to analyze at times.
 
                 <h2>Additional Takeaways</h2>
-                - !@#$%^*()<br>
-                - !@#$%^*()<br>
-                - !@#$%^*()<br>
+                <ul>
+                    <li>Understanding the framework of the recursion technique can be very easy, however implementing it is difficult.
+                    Do not be discouraged if it is difficult to understand what a recursion algorithm does when first trying it out.</li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
     </body>
