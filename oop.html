@@ -11,7 +11,7 @@
         <div class="main">
             <div class="content">
                 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-                <h1>OOP</h1>
+                <h1>Object Oriented Programming</h1>
                 <br>
                 <h2>Prerequisite Knowledge and Terms</h2>
                 Before proceeding with this tutorial, make sure you are familiar with the following concepts:
@@ -31,18 +31,82 @@
                 It provides a simple way to create objects; It provides easy access to object attributes and behaviors... All in all, all these
                 concepts of OOP provide benefis for large scale systems that involve a myriad of objects. OOP makes it easy to intermingle 
                 different pieces of code to produce a grander system. 
-                
+                <br><br>
+                <h2>Classes</h2>
+                All object oriented programs use classes as a way to instantiate objects.
+                As explained previously, a class is a template for an object; objects are instances of classes.
+                Each object has attributes and behaviors that were written in its class.
+                However, each object is personalized in way. This means that it can have a differet name, age, adress, etc...
+                The way we determine this personalizations is using a constructor.
+                A constructor is a standard part of class. It is a sort of method with the same name as the class.
+                When an object is created, the constructor is automatically executed.
+                Should the developer decide not to create a constructor, Java creates a default constructor at run time for the class.
+                Doing so, is not recommended and is considered bad practice. Your object oriented programs should have their own contrusctors.
+                Take a look at the class below as an example:
+                <br><br>
+                <img class="img" src="./imgs/oopex1.png">
+                <br><br>
+                The example above creates a Person class. The Person constructor has three paramaters: name, age and adress.
+                Also, the Person class has a public method greet().
+                This means that any time a Person object is created, three parameters need to be inputed.
+                Moreover, that Person object will have access to the greet() method.
+                Take a look at the example below on how the person object is created:
+                <br><br>
+                <img class="img" src="./imgs/oopex2.png">
+                <br><br>
+                Another important topic in relation to OOP, is encapsulation.
+                Encapsulation is the process of hidding class details to the outside world.
+                This means that the implementation of a class can be changed without affecting the code that uses it.
+                Encapsulation is achieved using access modifiers. Three most important that you will need to know is the following:
+                public, private and protected. A public variable means that it can be accessed from any other class.
+                A private variable means that it can only be accessed within the class.
+                A protected variable means that it can be accessed within the same package and subclasses.
                 <br><br>
                 <h2>Inheritance</h2>
+                Inheritance is a concept in OOP that allows a class to inherit the charactersitics of another class.
+                The class that is being inherited from is called the superclass or parent class,
+                and the class that is inheriting the characteristics is called the subclass or child class.
                 <br><br>
-                <h2>OOP and Inhertiance Example</h2>
+                Inheritance is useful because it promotes code reuse and allows for hierarchical organization of classes.
+                A subclass can add or override a behavior of the superclass, while still retaining its original functionality.
+                Overriding a method means to create a method with the same name and paramter list as another method,
+                except make it perform a different task.
+                Overloading a method is creating a method with the same name as another method but a different parameter list.
+                Both of these concepts a very important in OOP.
+                Take the class below as an example of inheritance, overloading and overriding.<br><br>
+                <img class="img" src="./imgs/oopex3.png">
+                Something important to note is the keyword super() in the class above.
+                Super is a call to the constructor of the superclass inside the subclass.
                 <br><br>
                 <h2>Polymorphism</h2>
+                Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated
+                as if they are objects of a common superclass. In other words, it is the ability of objects to take on multiple forms.
+                There are two types of polymorphism in Java:
+                compile-time polymorphism (also known as method overloading) and runtime polymorphism (also known as method overriding).
                 <br><br>
+                <h2>Abstract Class and Interfaces</h2>
+                Abstract classes and interfaces are both concepts in object-oriented programming that allow for more flexible and modular code.
+                An abstract class is a class that cannot be instantiated, meaning you cannot create an object of that class directly.
+                Instead, it is designed to be extended by other classes that inherit its properties and methods.
+                Abstract classes contain abstract methods, which are methods that are declared but not defined,
+                meaning they have no implementation in the abstract class.
+                These abstract methods are meant to be implemented by the subclasses that extend the abstract class.
+                <br><br>
+                Interfaces, on the other hand, are similar to abstract classes in that they cannot be instantiated,
+                but they only contain abstract methods and constants.
+                Unlike abstract classes, interfaces cannot have instance variables or constructors.
+                Interfaces are designed to be implemented by classes that want to provide specific functionality.
+                When a class implements an interface, it is required to implement all of the methods defined in the interface.
                 <h2>Additional Takeaways</h2>
-                - !@#$%^*()<br>
-                - !@#$%^*()<br>
-                - !@#$%^*()<br>
+                <ul>
+                    <li>Remember to always call super in the subclass constructor.</li>
+                    <li>
+                        When using polymorphism, make sure to properly understand how your program works and how to properly override
+                        superclass methods.
+                    </li>
+                    <li>Do not overuse inheritance in your programs. It can lead to unnecessary complications.</li>
+                    <li>Make sure to properly understand the class hierarchy of your program.</li>
+                </ul>
             </div>
         </div>
     </body>
