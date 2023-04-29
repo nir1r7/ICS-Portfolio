@@ -33,33 +33,55 @@
                 <br><br>
                 <img class="img" src="./imgs/arrayex1.png">
                 <br><br>
-                The previous example demonstrated one way of creating an array.
-                It both declared and initalized the array in one step. Another way of creating an array is by first declaring the array,
-                then later initializing it with values. This is useful in object oriented programming because normally arrays are declared
-                at the top of the class and is intialized in the country or in a method (E.i, mutator method).
-                Below is a demonstration of creating an array in a class.
-                <br><br>
-                <div class="img-wrapper">
-                    <img class="img">
-                    <br>
-                    image details: rwar
-                </div>
-                <br><br>
                 <h2>1D Array Example</h2>
-
-                <br><h2>2D Array Example</h2>
-
-                - Example:<br><br>
-                <code>
-                    public class Main{<br><br>}<br>
-
-                </code><br>
-                
+                The previous example introduced the declaration and initialization of a 1 Dimensional array.
+                In more depth, a one-dimensional array is a collection of variables of the same data type that are stored together in 
+                contiguous memory locations. These variables can be accessed using an index value, starting from 0 for the first element
+                and increasing by 1 for each subsequent element.
+                <br><br>
+                Take a look at the image below as a reference.
+                As we can see, the array has 9 elements, which mean it has accessible elements at indexes 0 through 8.
+                Attempting to access or change the value of an element at an index lower or higher than 0
+                will return an IndexOutOfBoundsException. This is an error that means the index in which you are trying to access does not exist.
+                <br><br>
+                <img class="img" src="./imgs/arrayex2.png">
+                <br><br>
+                Something important to note is that a 1D array is linear; meaning that it has a single `row` of elements. 
+                Notwithstanding, throughout the rest of this tutorial you will discover that a 2D array has `rows` and `columns.`
+                <br><br>
+                Anyhow, what makes arrays very useful is being able to access multiple variables of data with one identifier.
+                A key technique regarding accessing the elements of an array is traversing it.
+                Traversing an array is one the program loops through all the elements of an array.
+                This is done using many forms of iteration. However, the two most common are the `for loop` and the `for each loop.`
+                <br><br>
+                Take a look at the code below. The first method uses a `for loop` to traverse the array and access all its elements.
+                Using a for loop is a very effective way to traverse an array because we have access to each indice because of the 
+                loop variable. The second method uses a `for each loop` to traverse the array.
+                A `for each loop` instantly gives you access to each individual element, however, you do not have access to the index
+                each element. These types of loops are faster than normal `for loops,` having said this, they can be very limiting
+                because cannot modify the looping variable, nor have access to the indices of the elements.
+                <br><br>
+                <img class="img" src="./imgs/arrayex3.png">
+                <br><br>
+                <h2>2D Array Example</h2>
+                2 dimensional arrays, are arrays, that have arrays as elements, where each array element, has the same data type.
+                In simple terms, picture a coordinate system or matrix where there are rows and columns.
+                In 1D arrays, elements were accessed using only 1 indice.
+                In 2D arrays, elements are accessed using 2 indices: one for the `row coordinate` and one for the `column coordinate.`
+                <br><br>
+                The following code example demonstrates how a 2D array would be traversed.
+                Quite similar to 1D arrays, a 2D array uses some form of iteration to traverse the array and access all of its elements.
+                It is important to note that in a 2D array, not all the subarrays need to be the same size length.
+                These types of 2D arrays are called jagged arrays. A crucial point to remember is that when traversing
+                jagged arrays, the nested for loop conditional statement must ` < matrix[i].length ` instead of ` < matrix[0].length.`
+                <br><br>
+                <img class="img" src="./imgs/arrayex4.png">
+                <br><br>
                 <h2>Additional Takeaways</h2>
-                - !@#$%^*()<br>
-                - !@#$%^*()<br>
-                - !@#$%^*()<br>
-
+                <ul>
+                    <li>When using arrays, be careful about throwing the ArrayIndexOutOfBoundsException.</li>
+                    <li>The range of an array starts from 0, all the way array.length - 1 (inclusive).</li>
+                </ul>
             </div>
         </div>
     </body>
