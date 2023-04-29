@@ -12,7 +12,7 @@
             <div class="content">
                 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                 <h1>Arraylists</h1>
-                <br><br>
+                <br>
                 <h2>Prerequisite Knowledge and Terms</h2>
                 Arraylists are extremely simlar to arrays.
                 Thus if you are familiar with arrays, learning about arraylists should be relatively easy.
@@ -55,21 +55,43 @@
                     </tr>
                     <tr>
                         <td>
-                            Arrays can be declared for only one type of element. E.i, an array is declared to hold strings,
+                            Arrays can be declared for only one type of element. I.e, an array is declared to hold strings,
                             you cannot store an integer in it.
                         </td>
                         <td>
-                            An ArrayList can hold a mixture collection of objects if desired to. E.i, an ArrayList can hold 
+                            An ArrayList can hold a mixture collection of objects if desired to. I.e, an ArrayList can hold 
                             an Integer, String, Boolean, and another Integer. This form of using ArrayLists is not recommended.
                             However, it is a fully valid way of using the class.
                         </td>
                     </tr>
                 </table>
                 <br><br>
-                
                 <h2>ArrayList Example</h2>
+                Let's take a look at the program below. As we can see, ArrayLists have very few differences compared to Arrays.
+                However, a notable difference is the usage of object refrences only.
+                As mentioned before, ArrayLists can only hold objects as elements.
+                Thus, as the developer, we have to use techniques called autoboxing and autounboxing to be able to hold
+                primative data references in the ArrayList. Autoboxing is the process of converting a primative data type to
+                its respective wrapper class. I.e, converting an `int` into an `Integer` (like in the exapmle below).
+                Autounboxing is converting a wrapper class into its respective primative data type. I.e, converting an `Integeri into an `int.`
+                Autoboxing and autounboxing are techniques that are implemented automatically when working with ArrayLists.
+                <br><br>
+                <img class="img" src="./imgs/arraylistex1.png">
+                <br><br>
+                Traversing ArrayLists are the exact same as a travering an Array.
+                As mentioned in the other tutorial, the two most common ways of traversing an array is the `for loop` and the `for each loop.`
+                Both of these techniques are implemented in the code above and work the exact same way with ArrayLists.
+                To add on, similar to arrays, ArrayLists and also be 2 dimensional; they work the exact same way as arrays.
                 <br><br>
                 <h2>Additional Takeaways</h2>
+                <ul>
+                    <li>Similar to arrays, be careful about throwing the ArrayIndexOutOfBoundsException.</li>
+                    <li>The range of an ArrayList starts from 0, all the way arrList.size() - 1 (inclusive).</li>
+                    <li>
+                        Unlike arrays, you cannot access the elements of an ArrayList using square brackets, [ ].
+                        You most use the designated method for task that you would like to complete.
+                    </li>
+                </ul>
                 <br><br>
             </div>
         </div>
