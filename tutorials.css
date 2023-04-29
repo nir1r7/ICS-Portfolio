@@ -128,16 +128,47 @@ td{
     transform:scale(1.05);
 }
 
-.project-pic{
+.double-pic{
     width: 12.33vw;
+    height: 30.25vh;
+}
+
+#spodissey{
+    width: 25vw;
+    border-radius: 25px;
 }
 
 #shmup{
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    width: 12.33vw;
+    height: 30.25vh;
 }
 
 #jumpy{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    width: 12.33vw;
+    height: 30.25vh;
+}
+
+#metropolis{
+    width: 25vw;
+    height: 30.25vh;
+    border-radius: 25px;
+}
+
+#graphingcalc{
+    width: 25vw;
+    height: 30.25vh;
+    border-radius: 25px;
+}
+
+.biblio{
+    padding: 66px 7% 0% 7%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    z-index: 0;
+    line-height: 45px;
+    text-align: center;
 }
