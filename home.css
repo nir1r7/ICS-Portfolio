@@ -49,6 +49,10 @@ h1{
     /* background-image: linear-gradient(to bottom, rgb(24, 33, 43), rgb(18, 54, 92, 0.827)); */
 }
 
+.foot-page{
+    height: 55vh;
+}
+
 #container {
     right: 15vw;
     position: absolute;
