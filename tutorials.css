@@ -16,7 +16,11 @@ h1{
 
 .main h2{
     color: #1e5c9e;
-    font-size: 28px;
+    font-size: 35px;
+}
+
+.main h3{
+    font-size: 25px;
 }
 
 .content{
@@ -29,9 +33,23 @@ h1{
     line-height: 25px;
 }
 
+.img-space{
+    padding-bottom: 15px;
+}
+
 .img{
     border: solid #1e5c9e 2px;
     border-radius: 15px;
+}
+
+.isp-img{
+    border: solid #1e5c9e 2px;
+    border-radius: 15px;
+    width: 35vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .tooltip{

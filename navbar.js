@@ -27,6 +27,7 @@ function navbar(){
                     </div>
 
                     <div class="navbar-spacing"><a href="addtionallearning.html"><i class="fa fa-code"></i> Projects</a></div>
+                    <div class="navbar-spacing"><a href="isp.html"><i class="fa fa-file-code-o"></i> ISP</a></div>
                     <div class="navbar-spacing"><a href="bibliography.html"><i class="fa fa-file-text-o"></i> Bibliography</a></div>
                 </div>
             </div>

@@ -43,7 +43,7 @@ body{
 
 .navbar .navbar-spacing{
   float: left;
-  padding: 0px 20px;
+  padding: 0px 5px;
 }
 
 .navbar .navbar-logo{
@@ -61,7 +61,7 @@ body{
   float: left;
   text-align: center;
   text-decoration: none;
-  padding: 14px 55vh 14px 0px;
+  padding: 14px 65vh 14px 0px;
   border: none;
 }
 
